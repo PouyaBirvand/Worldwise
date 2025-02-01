@@ -2,7 +2,7 @@
 ![WorldWise Banner](public/logo.png)
 
 ## 🚀 Live Demo
-[Check out WorldWise in action!](your-demo-link)
+[Check out WorldWise in action!](https://worldwise-production-3b25.up.railway.app/)
 
 ## ✨ What Makes WorldWise Special
 Track your worldwide adventures with an interactive map interface! Mark cities, add notes, and create your personal travel diary.
