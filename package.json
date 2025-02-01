@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "server": "json-server --watch data/cities.json --port 9000 --delay 500"
+    "server": "json-server --watch data/cities.json --port 9000 --delay 500",
+    "start": "npm run server & vite preview --port $PORT --host 0.0.0.0"
   },
   "dependencies": {
     "json-server": "^0.17.3",
