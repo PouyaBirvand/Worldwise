@@ -1,0 +1,10 @@
+.spinnerFullpage {
+  margin: 2.5rem;
+  height: calc(100vh - 5rem);
+  background: linear-gradient(to bottom, rgba(36, 36, 36, 0.95), rgba(48, 48, 48, 0.95));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+}

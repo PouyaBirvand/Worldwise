@@ -1,0 +1,107 @@
+.login {
+  height: 100vh;
+  margin: 0;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 2.5rem 5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.login::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(76, 0, 255, 0.15), rgba(0, 255, 255, 0.15));
+  animation: gradientShift 10s infinite alternate;
+}
+
+.form {
+  background: rgba(36, 36, 36, 0.9);
+  border-radius: 15px;
+  padding: 3rem 4rem;
+  width: 48rem;
+  margin: 8rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  position: relative;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  animation: formAppear 0.8s ease-out;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.row label {
+  color: var(--color-light--2);
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.row input {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 1.2rem;
+  border-radius: 8px;
+  color: var(--color-light--1);
+  font-size: 1.6rem;
+  transition: all 0.3s;
+}
+
+.row input:focus {
+  outline: none;
+  border-color: var(--color-brand--2);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 0 4px rgba(99, 220, 233, 0.1);
+}
+
+@keyframes gradientShift {
+  0% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes formAppear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .login {
+    padding: 2rem;
+  }
+  
+  .form {
+    width: 100%;
+    padding: 2rem;
+    margin: 4rem auto;
+  }
+}

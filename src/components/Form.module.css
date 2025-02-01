@@ -1,0 +1,64 @@
+.form {
+  background: linear-gradient(to bottom, rgba(36, 36, 36, 0.95), rgba(48, 48, 48, 0.95));
+  border-radius: 15px;
+  padding: 3rem 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  position: relative;
+}
+
+.row input,
+.row textarea {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 1.2rem;
+  border-radius: 8px;
+  color: var(--color-light--1);
+  font-size: 1.6rem;
+  transition: all 0.3s;
+}
+
+.row input:focus,
+.row textarea:focus {
+  outline: none;
+  border-color: var(--color-brand--2);
+  box-shadow: 0 0 0 4px rgba(99, 220, 233, 0.1);
+}
+
+.row label {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--color-light--2);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.flag {
+  position: absolute;
+  right: 1rem;
+  top: 2.7rem;
+  font-size: 2.8rem;
+  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.3));
+}
+
+.form.loading {
+  opacity: 0.3;
+  pointer-events: none;
+  transition: all 0.3s;
+}

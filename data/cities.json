@@ -1,0 +1,52 @@
+{
+  "cities": [
+    {
+      "cityName": "Lisbon",
+      "country": "Portugal",
+      "emoji": "🇵🇹",
+      "date": "2027-10-31T15:59:59.138Z",
+      "notes": "My favorite city so far!",
+      "position": {
+        "lat": 38.727881642324164,
+        "lng": -9.140900099907554
+      },
+      "id": "73930385"
+    },
+    {
+      "cityName": "Nijar",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-04-03T07:47:59.202Z",
+      "notes": "",
+      "position": {
+        "lat": "36.967508314568164",
+        "lng": "-2.13128394200588"
+      },
+      "id": "98443198"
+    },
+    {
+      "id": "a007",
+      "cityName": "Saint-Denis-de-Jouhet",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2025-02-01T21:04:01.356Z",
+      "notes": "",
+      "position": {
+        "lat": "-25.324166525738384",
+        "lng": "121.11328125000001"
+      }
+    },
+    {
+      "id": "1621",
+      "cityName": "دهستان بندر امام خمینی",
+      "country": "Iran",
+      "emoji": "🇮🇷",
+      "date": "2025-02-01T21:10:29.742Z",
+      "notes": "Bah Bah",
+      "position": {
+        "lat": "30.545704405480997",
+        "lng": "49.05944824218751"
+      }
+    }
+  ]
+}

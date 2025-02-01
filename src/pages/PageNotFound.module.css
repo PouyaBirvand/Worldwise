@@ -1,0 +1,27 @@
+.pageNotFound {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgba(36, 36, 36, 0.95), rgba(48, 48, 48, 0.95));
+    padding: 2.5rem;
+  }
+  
+  .content {
+    text-align: center;
+    padding: 4rem;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .content h1 {
+    font-size: 3.6rem;
+    color: var(--color-light--1);
+    margin-bottom: 2rem;
+    background: linear-gradient(to right, #fff, var(--color-brand--2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }

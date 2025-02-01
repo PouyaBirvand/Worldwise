@@ -1,0 +1,21 @@
+.logo {
+  height: min(5.2rem, 12vw);
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .logo {
+    height: 3.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    display: none;
+  }
+}
