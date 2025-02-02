@@ -94,14 +94,51 @@
   }
 }
 
+/* Add these media queries */
+
+/* Tablet Breakpoint */
+@media (max-width: 1024px) {
+  .form {
+    width: 60rem;
+    padding: 2.5rem 3rem;
+  }
+}
+
+/* Mobile Breakpoint */
 @media (max-width: 768px) {
   .login {
-    padding: 2rem;
+    padding: 1.5rem;
   }
   
   .form {
     width: 100%;
     padding: 2rem;
     margin: 4rem auto;
+  }
+
+  .row input {
+    padding: 1rem;
+    font-size: 1.4rem;
+  }
+}
+
+/* Small Mobile Breakpoint */
+@media (max-width: 480px) {
+  .login {
+    padding: 1rem;
+  }
+
+  .form {
+    padding: 1.5rem;
+    margin: 2rem auto;
+  }
+
+  .row label {
+    font-size: 1.4rem;
+  }
+
+  .row input {
+    padding: 0.8rem;
+    font-size: 1.2rem;
   }
 }

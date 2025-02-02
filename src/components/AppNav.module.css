@@ -38,3 +38,27 @@
   color: var(--color-dark--0);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+
+@media (max-width: 768px) {
+  .nav {
+    width: 100%;
+    margin: 1.5rem 0;
+  }
+
+  .nav ul {
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .nav a:link,
+  .nav a:visited {
+    font-size: 1.2rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav ul {
+    gap: 1rem;
+  }
+}

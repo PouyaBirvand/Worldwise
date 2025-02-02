@@ -12,13 +12,12 @@
   --color-dark--2: #42484d;
   --color-light--1: #aaa;
   --color-light--2: #ececec;
-  --color-light--3: #d6dee0;
 }
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
@@ -52,7 +51,6 @@ textarea {
 
 input:focus {
   outline: none;
-  background-color: #fff;
 }
 
 .cta:link,

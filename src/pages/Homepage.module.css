@@ -131,16 +131,65 @@
   }
 }
 
+/* Add these media queries */
+
+/* Tablet Breakpoint */
+@media (max-width: 1024px) {
+  .homepage {
+    padding: 2rem 3rem;
+  }
+
+  .homepage h1 {
+    font-size: 4rem;
+  }
+
+  .homepage h2 {
+    font-size: 1.8rem;
+    width: 95%;
+  }
+}
+
+/* Mobile Breakpoint */
 @media (max-width: 768px) {
   .homepage {
-    padding: 2rem;
+    padding: 1.5rem;
   }
   
   .homepage h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
+    line-height: 1.2;
   }
   
   .homepage h2 {
     font-size: 1.6rem;
+    width: 100%;
+  }
+
+  .homepage section {
+    gap: 2rem;
+  }
+
+  .homepage :global(.cta) {
+    padding: 1.2rem 2.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Small Mobile Breakpoint */
+@media (max-width: 480px) {
+  .homepage {
+    padding: 1rem;
+  }
+
+  .homepage h1 {
+    font-size: 2.5rem;
+  }
+
+  .homepage h2 {
+    font-size: 1.4rem;
+  }
+
+  .homepage section {
+    gap: 1.5rem;
   }
 }

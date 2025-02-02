@@ -22,3 +22,14 @@
   font-size: 3.2rem;
   line-height: 1;
 }
+
+@media (max-width: 768px) {
+  .countryItem {
+    padding: 1.2rem 1.8rem;
+    font-size: 1.4rem;
+  }
+
+  .countryItem span:first-child {
+    font-size: 2.6rem;
+  }
+}

@@ -60,3 +60,29 @@
   background: rgb(255, 59, 48);
   transform: scale(1.1);
 }
+
+@media (max-width: 768px) {
+  .cityItem,
+  .cityItem:link,
+  .cityItem:visited {
+    padding: 1rem 1.6rem;
+    gap: 1.2rem;
+  }
+
+  .emoji {
+    font-size: 2.2rem;
+  }
+
+  .name {
+    font-size: 1.4rem;
+  }
+
+  .date {
+    font-size: 1.2rem;
+  }
+
+  .deleteBtn {
+    height: 2rem;
+    font-size: 1.4rem;
+  }
+}

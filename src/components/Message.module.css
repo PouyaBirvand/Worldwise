@@ -24,3 +24,10 @@
     transform: translateY(0);
   }
 }
+
+@media (max-width: 768px) {
+  .message {
+    padding: 2rem;
+    font-size: 1.6rem;
+  }
+}

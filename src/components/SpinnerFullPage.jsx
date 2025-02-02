@@ -4,7 +4,9 @@ import styles from "./SpinnerFullPage.module.css";
 function SpinnerFullPage() {
   return (
     <div className={styles.spinnerFullpage}>
-      <Spinner />
+      <div className={styles.spinner}>
+        <Spinner />
+      </div>
     </div>
   );
 }

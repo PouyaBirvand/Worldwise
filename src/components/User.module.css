@@ -40,3 +40,30 @@
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+
+@media (max-width: 1024px) {
+  .user {
+    top: 2rem;
+    right: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .user {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-bottom: 2rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .user img {
+    height: 3.5rem;
+  }
+
+  .user button {
+    padding: 0.6rem 1.2rem;
+    font-size: 1.1rem;
+  }
+}

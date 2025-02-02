@@ -111,11 +111,16 @@
   }
 }
 
-@media (max-width: 1000px) {
+/* Add these media queries */
+
+/* Tablet Breakpoint */
+@media (max-width: 1024px) {
+  .product {
+    padding: 2rem 3rem;
+  }
+
   .product section {
-    grid-template-columns: 1fr;
-    gap: 4rem;
-    text-align: center;
+    gap: 3rem;
   }
 
   .product h2 {
@@ -127,8 +132,48 @@
   }
 }
 
+/* Mobile Breakpoint */
 @media (max-width: 768px) {
   .product {
-    padding: 2rem;
+    padding: 1.5rem;
+  }
+
+  .product section {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    margin: 3rem auto;
+    text-align: center;
+  }
+
+  .product h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .product p {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Small Mobile Breakpoint */
+@media (max-width: 480px) {
+  .product {
+    padding: 1rem;
+  }
+
+  .product section {
+    gap: 2rem;
+    margin: 2rem auto;
+  }
+
+  .product h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .product p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
   }
 }

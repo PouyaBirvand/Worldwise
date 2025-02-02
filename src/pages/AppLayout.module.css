@@ -7,12 +7,24 @@
   background: var(--color-dark--1);
 }
 
+/* Base styles remain the same */
+
+/* Tablet Breakpoint */
+@media (max-width: 1024px) {
+  .app {
+    padding: 2rem;
+    gap: 2rem;
+  }
+}
+
+/* Mobile Breakpoint */
 @media (max-width: 768px) {
   .app {
     flex-direction: column;
     padding: 1.2rem;
     height: auto;
     min-height: 100vh;
+    gap: 1.6rem;
   }
 
   :global(.leaflet-container) {
@@ -27,6 +39,7 @@
   }
 }
 
+/* Small Mobile Breakpoint */
 @media (max-width: 480px) {
   .app {
     padding: 0.8rem;

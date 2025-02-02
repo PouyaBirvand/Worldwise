@@ -1,4 +1,8 @@
 .sidebar {
+  position: relative;
+  min-height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
   flex-basis: 56rem;
   background: linear-gradient(to bottom, rgba(36, 36, 36, 0.95), rgba(48, 48, 48, 0.95));
   padding: 3rem 5rem 3.5rem 5rem;
@@ -9,6 +13,14 @@
   backdrop-filter: blur(10px);
   border-radius: 15px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar :global(.spinnerContainer) {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .footer {
@@ -24,4 +36,24 @@
   color: var(--color-light--2);
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    flex-basis: 45rem;
+    padding: 2.5rem 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    flex-basis: auto;
+    height: auto;
+    padding: 2rem;
+    width: 100%;
+  }
+
+  .footer {
+    padding: 1.5rem 0;
+  }
 }
