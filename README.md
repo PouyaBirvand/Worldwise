@@ -2,7 +2,23 @@
 ![WorldWise Banner](public/logo.png)
 
 ## 🚀 Live Demo
-[Check out WorldWise in action!](https://worldwise-production-f645.up.railway.app/)
+[Check out WorldWise in action!](https://worldwise-omega-teal.vercel.app/)
+
+## 📱 App Preview
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://s6.uupload.ir/files/worldwise1_36yc.png" width="400px" alt="WorldWise Map Interface" />
+      <br />
+      <em>Interactive Map Interface</em>
+    </td>
+    <td align="center">
+      <img src="https://s6.uupload.ir/files/worldwise2_sgja.png" width="400px" alt="WorldWise City Details" />
+      <br />
+      <em>Homepage</em>
+    </td>
+  </tr>
+</table>
 
 ## ✨ What Makes WorldWise Special
 Track your worldwide adventures with an interactive map interface! Mark cities, add notes, and create your personal travel diary.
@@ -13,13 +29,11 @@ Track your worldwide adventures with an interactive map interface! Mark cities, 
   - Click-to-add city functionality
   - Custom map markers
   - Responsive design
-
 - **Travel Management** 🌆
   - Add visited cities
   - Record travel dates
   - Personal travel notes
   - City deletion capability
-
 - **User Experience** 👤
   - Dark mode interface
   - Responsive design
@@ -34,9 +48,7 @@ Track your worldwide adventures with an interactive map interface! Mark cities, 
 - **CSS Modules** - Styling
 - **JSON Server** - Backend Mock
 
-
 ## 📦 Getting Started
-
 ```bash
 # Clone WorldWise
 git clone https://github.com/your-username/worldwise.git
@@ -53,15 +65,16 @@ json-server --watch data/cities.json --port 9000
 # Launch development server (Terminal 2)
 npm run dev
 ```
-### ⚠️ Important Setup Notes
 
+### ⚠️ Important Setup Notes
 1. JSON Server must run on port 9000 for the application to work correctly
 2. Make sure data/cities.json exists and contains the initial data structure
 3. Keep both development server and JSON server running simultaneously
 4. Default development server runs on http://localhost:5173
 5. API endpoints will be available at http://localhost:9000
-6. ### 📝 Initial Data Structure
+6. 
 
+### 📝 Initial Data Structure
 ```json
 {
   "cities": []
@@ -69,11 +82,13 @@ npm run dev
 ```
 
 ## 💻 Development
+```bash
 # Build for production
 npm run build
 
 # Preview production build
 npm run preview
+```
 
 ## 🎨 Project Structure
 ```bash
@@ -86,8 +101,8 @@ worldwise/
 │   ├── pages/       # Route pages
 └── data/           # JSON server data
 ```
-## 🌟 Key Features Explained
 
+## 🌟 Key Features Explained
 ### Map Integration
 - Interactive Leaflet maps
 - Real-time position tracking
@@ -106,7 +121,6 @@ worldwise/
 - Intuitive navigation
 
 ## 📱 Screenshots
-
 | Home | City Form | Cities List |
 |------|-----------|-------------|
 | ![Home](public/img-1.jpg) | ![Form](public/img-2.jpg) | ![List](public/bg.jpg) |
@@ -140,7 +154,5 @@ Your Name
 - JSON Server Team
 
 ---
-
 ⭐️ If you like WorldWise, give it a star!
-
 [Report Bug](issues-link) · [Request Feature](issues-link) · [Documentation](docs-link)
