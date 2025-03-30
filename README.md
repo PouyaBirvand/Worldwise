@@ -34,6 +34,7 @@ Track your worldwide adventures with an interactive map interface! Mark cities, 
 - **CSS Modules** - Styling
 - **JSON Server** - Backend Mock
 
+
 ## 📦 Getting Started
 
 ```bash
@@ -43,12 +44,30 @@ git clone https://github.com/your-username/worldwise.git
 # Install dependencies
 npm install
 
-# Start JSON server (Terminal 1)
-npm run server
+# Install JSON Server globally
+npm install -g json-server
+
+# Start JSON server on port 9000 (Terminal 1)
+json-server --watch data/cities.json --port 9000
 
 # Launch development server (Terminal 2)
 npm run dev
 ```
+### ⚠️ Important Setup Notes
+
+1. JSON Server must run on port 9000 for the application to work correctly
+2. Make sure data/cities.json exists and contains the initial data structure
+3. Keep both development server and JSON server running simultaneously
+4. Default development server runs on http://localhost:5173
+5. API endpoints will be available at http://localhost:9000
+6. ### 📝 Initial Data Structure
+
+```json
+{
+  "cities": []
+}
+```
+
 ## 💻 Development
 # Build for production
 npm run build
